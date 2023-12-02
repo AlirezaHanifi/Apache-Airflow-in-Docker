@@ -4,7 +4,7 @@ In the meticulous creation of a delectable chocolate cake, adherence to a precis
 
 In the domain of data orchestration, the orchestrator assumes the role of overseeing the movement of disparate data to a centralized repository. Subsequently, this data undergoes transformation for activation, exemplified by the generation of reports using business intelligence tools.
 
-![](#/../../img/data_orchestration.png)
+![](../img/data_orchestration.png)
 
 # Airflow: An Overview
 
@@ -54,7 +54,7 @@ A Task Instance represents a specific run of a task, characterized by the combin
 
 Triggered by Airflow, a DAG Run materializes when a DAG is activated. It encapsulates information such as state, DAG ID, logical date, run ID, run type, and more. The state can be Success, Failed, Running, or Queued.
 
-![](#/../../img/airflow_concepts.png)
+![](../img/airflow_concepts.png)
 
 # Task Lifecycle
 
@@ -74,7 +74,7 @@ A Task’s lifecycle is a progression through various states, reflecting its exe
 - **up_for_reschedule:** In the case of a task configured as a Sensor in reschedule mode, it will be rescheduled at defined time intervals.
 - **deferred:** The task enters a deferred state, associated with a trigger that may introduce complexities yet to be resolved.
 
-![](#/../../img/task_lifecycle.png)
+![](../img/task_lifecycle.png)
 
 # Basic Architecture
 
@@ -92,7 +92,7 @@ Situational components, such as Worker and Triggerer, are employed selectively f
 - **Worker**: The process that executes tasks, as defined by the executor. Depending on which executor you choose, you may or may not have workers as part of your Airflow infrastructure.
 - **Triggerer**: A separate process which supports deferrable operators. This component is optional and must be run separately. It is needed only if you plan to use deferrable (or "asynchronous") operators.
 
-![](#/../../img/basic_architecture.png)
+![](../img/basic_architecture.png)
 
 ## Executors
 
